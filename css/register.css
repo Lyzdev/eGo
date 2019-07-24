@@ -1,0 +1,149 @@
+/* 页头 */
+#login{
+    height: 21px;
+    line-height: 21px;
+    background-color: #000;
+    color:#bfbfbf;
+}
+#login a{
+    color:#ff6600;
+}
+#login span:first-child{
+    font-size: 18px;
+    color:#e6e6e6;
+    margin-left: 266px;
+}
+#logoRegister{
+    line-height: 84px;
+    text-indent: 24px;
+    color:#666;
+    box-shadow: 0 5px  5px #d8d6d6;
+}
+#logoRegister h3{
+    float: left;
+    margin: -21px 0 03px;
+    width: 258px;
+    height: 105px;
+    line-height: 105px;
+    font-weight: normal;
+    text-indent: 156px;
+    color: #fff;
+    background: url(../img/otherLogo.gif) no-repeat;
+}
+#logoRegister span{
+    float: right;
+    margin-right: 38px;
+    line-height: 116px;
+    font-size: 24px;
+    color:#a6a6a6;
+}
+#logoRegister span a{
+    color:#666;
+}
+/* 注册表单 */
+#regForm{
+    font-size:22px;
+    color:#666;
+    border-bottom:2px solid #e6e6e6;
+}
+#regForm ul{
+    margin: 6px auto 0;
+    width: 402px;
+}
+#regForm li{
+    position: relative;
+    margin: 48px 0;
+    width: 390px;
+    height: 42px;
+    line-height: 42px;
+    border:1px solid #d9d9d9;
+}
+#regForm li:not(:last-child){
+    padding-left:10px; 
+}
+#regForm input{
+    font-size:16px;
+    border:0;
+    float: right;
+    width: 270px;
+    height: 100%;
+}
+#regForm input.verify{
+    float: left;
+    width: 140px;
+    height:42px;
+}
+#regForm li .verify-box{
+    width:270px;
+}
+#regForm li span{
+    margin: 3px;
+    display:inline-block;
+    background: #1a83e5;
+    cursor: pointer
+}
+#regForm li span,#regForm li .getc-btn{   
+    width: 124px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center; 
+}
+#regForm li .getc-btn{
+    float:right;
+    border:0;
+    color: #4d4d4d;
+    background: #e6e6e6;
+    margin:3px;
+    cursor: pointer;
+}
+#regForm .phone-check{
+    margin-bottom: 6px;
+}
+#regForm .proto{
+    font-size: 14px;
+    border:0;
+    margin: 6px 0 15px;
+}
+#regForm .proto span{
+    display: inline;
+    background-color: #fff;
+}
+#regForm .proto a{
+    color:#ff6600;
+}
+#regForm .radio-box{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border:1px solid #e6e6e6;
+}
+#regForm .proto-check{
+    display: none;
+}
+#regForm .submit-li{
+    margin: 15px 0 38px;
+}
+#regForm .submit-li input{
+    cursor: pointer;
+}
+#regForm .fals{
+    position: absolute;
+    right:10px;
+    top:14px;
+    display: none;
+}
+#regForm .checkCode{
+    line-height: 40px;
+}
+#regForm input[type='submit']{
+    width:100%;
+    line-height: 42px;
+    font-size:28px;
+    text-align: center;
+    color:#fff;
+    background: #ff6600;
+}
+#regForm .error{ 
+    font-size: 18px;
+    color:red;
+}

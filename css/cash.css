@@ -1,0 +1,85 @@
+#logoRegister{
+    box-shadow: 0;
+}
+/* 订单 */
+#order .tips{
+    font-size: 20px;
+    color:#666;
+}
+#order .tips a{
+    font-size: 18px;
+    float:right;
+    color:#1080e9;
+    text-decoration: underline;
+}
+#order .tips-content{
+    margin: 5px 0;
+    line-height: 60px;
+    height:60px;
+    background-color: #f2f2f2;
+}
+#order .tips-content .cost{
+    margin-right: 60px;
+}
+.pay-title{
+    padding: 5px 0;
+    line-height: 35px;
+}
+.pay-title p{
+    width: 150px;
+    text-align: center;
+}
+.pay-title span{
+    color:#bfbfbf;
+}
+.pay-choice{
+    padding:28px 22px 32px 48px;
+    margin: 5px 0;
+    background: #f2f2f2;
+}
+.pay-choice div{
+    float: left;
+    line-height: 30px;
+    color:#4d4d4d;
+    padding:0 32px;
+    margin:  0 14px;
+    border:1px solid #ccc;
+    cursor: pointer;
+}
+.lego-pay .add-card{
+    padding:0 6px;
+    color: white;
+    background-color: #999;
+}
+.lego-pay .pay-btn{
+    float:right;
+    width: 228px;
+    height: 60px;
+    font-size: 26px;
+    color:#fff;
+	background-color: #ff6600;
+	border-radius: 2px;
+    border:0;
+    cursor: pointer;
+    margin: 6px 0;
+}
+.other-pay{
+    margin: 28px auto 34px;
+}
+.other-pay .pay-title p{
+    background-color: #76aff5;
+}
+.other-pay .pay-choice {
+    padding-left:74px;
+}
+.other-pay .pay-choice a{
+    color:#595959;
+    text-decoration: none;
+}
+.other-pay .pay-choice a:hover{
+    color:#ff6600;
+}
+.click-bg{
+    background:url(../img/click-bg_06.jpg) right bottom no-repeat;
+    border-color: #ff6600 !important;
+}

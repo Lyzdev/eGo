@@ -1,0 +1,67 @@
+/* 页脚 */
+#footer{
+    border-top:6px solid #ff6600;
+}
+#footer .feature .wrap{
+    width:918px;
+    padding: 26px 0;
+}
+#footer .feature i{
+      display:inline-block;
+      width: 138px;
+      height: 52px;
+      margin: 0 44px;
+}
+#footer .feature  i:first-child{
+    background: url(../img/footer_bg.png) 0px 1px;
+}
+#footer .feature  i:nth-child(2){
+    background: url(../img/footer_bg.png) 0px -51px;
+}
+#footer .feature  i:nth-child(3){
+    background: url(../img/footer_bg.png) 0px -103px;
+}
+#footer .feature  i:last-child{
+    background: url(../img/footer_bg.png) 0px -155px;
+}
+#footer .footer-menu{
+    width:760px;
+    padding-top: 34px;
+}
+#footer .footer-menu li{
+       float: left;
+       margin: 0 32px;
+}
+#footer .footer-menu dt{
+    line-height: 22px;
+    font-size: 18px;  
+}
+#footer .footer-menu dt a{
+    color:#000;
+}
+#footer .footer-menu dd{
+    font-size:16px;  
+    line-height: 28px;
+}
+#footer .footer-menu dd a{
+    color:#4d4d4d;
+}
+#footer .foot-logo{
+    display: inline-block;
+    width: 144px;
+    height: 114px;
+    background: url(../img/foot-logo.jpg) no-repeat center;
+}
+.linkCopy{
+    margin-top: 6px;
+    padding-bottom: 72px;
+    line-height: 76px;
+    width: 766px;
+    color:#333;
+}
+.linkCopy a{
+    color:#333;
+}
+.linkCopy a:hover{
+    color:#ff6600;
+}

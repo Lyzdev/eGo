@@ -1,0 +1,213 @@
+#logoRegister .inbox{
+    width: 434px;
+}
+#logoRegister .search-box{
+    margin: 8px 0; 
+}
+#logoRegister .search-box .to-address{
+    margin-top: 50px;
+    text-align: right;
+}
+#logoRegister .to-address .address{
+    margin-left: 10px;
+}
+/* 订单 */
+#order .tips{
+    padding: 5px 0;
+    font-size: 20px;
+    color:#666666
+}
+#order .all-check-box{
+    float: left;
+    width: 16px;
+    height: 16px;
+    border:1px solid #ccc;
+    padding:0 !important;
+    margin: 21px 0px 0px 21px;
+}
+#order .order-title{
+    padding-bottom: 19px;
+    border-bottom: 6px solid #dfdfdf;
+}
+#order .order-title>div{
+    float:left;
+    color:#808080;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+#order .col-1{
+    width: 114px;
+}
+#order .col-2{
+    width: 438px;
+}
+#order .col-3{
+    width: 198px;
+}
+#order .col-4{
+    width: 152px;
+}
+#order .col-5{
+    width: 116px;
+}
+#order .col-6{
+    width: 182px;
+}
+#order .order-content{
+    border-bottom: 2px solid #e6e6e6;
+}
+#order .order-content div{
+    float:left;
+    color:#808080;
+    font-size: 18px;
+    /* line-height: 60px; */
+    padding:20px 0;
+    text-align: center;
+    /* background-color: #f2f2f2; */
+}
+#order .check-box{
+    width: 16px;
+    height: 16px;
+    border:1px solid #ccc;
+    padding:0 !important;
+    margin: 20px 30px;
+}
+#order .check-box label,#order .all-check-box label{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#order .order-content .single-check,#order .all-check{
+    display: none;
+}
+#order .order-content .product-name{
+    padding:22px 30px;
+}
+#order .order-content .product-name a{
+    color:#4d4d4d;
+}
+#order .order-content .product-name:hover a{
+    color:#ff6600;
+}
+#order .order-content .num{
+    margin: 0 auto;
+    width: 124px;
+    height: 24px;
+}
+#order .order-content .num li{
+    float:left;
+}
+#order .order-content .num input.input-num{
+    width: 72px;
+    height: 24px;
+    text-align: center;
+    border:1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+}
+#order .order-content .num .warnning{
+    color:red;
+    font-size: 8px;
+}
+#order .order-content .count{
+    width: 72px;
+    border:0;   
+}
+#order .order-content .dec,#order .order-content .add{
+    width: 24px;   
+    border:1px solid #ccc;
+    cursor: pointer;
+}
+#order .order-content .operate span:hover{
+    color:#ff6600;
+}
+#order .order-total{
+    margin-top: 32px;
+    border:1px solid #ccc;
+}
+#order .order-total div{
+    color:#808080;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    /* background-color: #f2f2f2; */
+}
+#order .order-total .del-product{
+   margin-left: 32px;
+}
+#order .order-total  .total-result{
+    height: 58px;
+    font-size: 16px;
+    color:#808080;
+}
+#order .order-total .total-content{
+    margin: 0 50px;
+    font-size: 20px;
+    color:#4d4d4d;
+}
+#order .order-total .final-total-num,#order .order-total .final-total-price{
+    margin:0 9px;
+    color:#ff6600;
+    font-size: 20px;
+}
+#order .order-total .pay-btn{
+    border:0;
+    width: 128px;
+    height: 60px;
+    line-height: 60px;
+    color:#fff;
+    background: #ff6600;
+    font-size: 26px;
+}
+/* 猜你喜欢 */
+#like .booklist li{
+    float:left;
+    padding: 7px 0 9px;
+    width: 210px; 
+    margin: 0 16px;
+}
+#like .booklist li:hover{
+    background-color: #f2f2f2;
+}
+#like .booklist li:first-child,#like .booklist li:nth-child(6){
+    margin: 0 ;
+}
+#like .booklist li .book-pic{
+    margin: 0 30px ;
+}
+#like .booklist li p{
+    font:14px;
+    margin: 5px 8px ;
+}
+#like .booklist li p a{
+    color:#333;
+}
+#like .booklist .star-title{
+    color:#f4290d;
+    line-height: 18px;
+    margin-left: 8px;
+}
+#like .booklist .star{
+    width: 108px;
+    height: 18px;
+    vertical-align: middle;
+    background: url(../img/bookstar_20.jpg);
+}
+#like .booklist .now-price{
+    color:#f4290d;
+    margin:0 8px;
+}
+#like .booklist .prev-price{
+    margin: 0 14px;
+    text-decoration: line-through;
+    color:#c0c0c0;
+}
+#like .img-ad{
+    margin-top: 88px;
+}
+.modal1Title{
+    font-size: 20px;
+}

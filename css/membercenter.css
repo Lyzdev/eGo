@@ -1,0 +1,356 @@
+#logoRegister{
+         line-height: 84px;
+}
+#logoRegister .head-nav{
+    float: right;
+    width: 422px;
+    margin: 23px 143px 25px 0;
+} 
+#logoRegister .head-nav li{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-indent: 0;
+    width: 80px;
+    font-size: 20px;
+    margin: 0 29px;
+}
+#logoRegister .head-nav li a{
+    color:#999;
+}
+#logoRegister .head-nav li:hover{
+    background-color: #ff6600;
+}
+#logoRegister .head-nav li:hover a{
+      color:#fff
+}
+/* banner */
+/* 左边部分 */
+#member-banner .banner-left{
+  padding: 8px 0 16px;
+	width: 230px;
+	height: 450px;
+  background-color: #ffffff;
+  top:13px;
+  left:76px;
+  z-index: 1;
+}
+#member-banner .privi{
+  line-height: 32px;
+}
+#member-banner .act-name{
+  font-size: 20px;
+  margin: 5px 0;
+}
+#member-banner .act-cont{
+  font-size: 14px;
+  line-height: 18px;
+}
+#member-banner .act-cont span{
+ color:#fb0606;
+}
+#member-banner .privi-1{
+  margin-top: 35px;
+  padding:16px 7px 25px;
+  background: url(../img/member-coin.jpg) bottom right;
+}
+#member-banner .privi-2{
+  padding: 15px  7px 24px;
+  background: url(../img/membe-act.jpg) bottom right;
+}
+#member-banner .privi-3{
+  padding: 16px  7px  34px;
+  background: url(../img/member-logo.jpg) bottom right;
+}
+/* 轮播中部 */
+.section-project {
+  /* padding: 50px 0; */
+  position: relative;
+  background-color: #222;
+}
+.section__title, .section__subtitle {
+  text-align: center;
+  color: white;
+  display: block;
+}
+.section__title {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0 0 20px;
+}
+.section__subtitle {
+  font-size: 1.2em;
+  line-height: 1.5;
+  opacity: .5;
+}
+.section__subtitle a {
+  color: inherit;
+}
+.project-carousel {
+  position: relative;
+  /* padding: 50px 0; */
+}
+.project-strip {
+  /* margin: 150px 0 150px; */
+  margin: 3px 0;
+  /* -webkit-filter: blur(10px);
+          filter: blur(10px); */
+          -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+.project-strip .project {
+  cursor: pointer;
+}
+.project-strip img {
+  /* max-width: 100%; */
+  /* width: 100%; */
+  /* height: auto; */
+  width: 100%;
+  height: auto;
+  max-height:496px;
+}
+.project-screen {
+  /* width: 768px;
+  height: 451px; */
+  width: 732px;
+  height: 474px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.project-screen .project-detail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* width: 578px;
+  height: 361px; */
+  width: 732px;
+  height: 474px;
+  /* margin: 32px auto 0; */
+  z-index: 1;
+  background-color: #333;
+}
+.project-screen .screen-frame {
+  content: " ";
+  /* width: 768px;
+  height: 451px; */
+  width: 732px;
+  height: 474px;
+  position: absolute;
+  /* background-image: url("../img/macbook.png"); */
+  background-repeat: no-repeat;
+}
+.project-screen .project {
+  margin-right: -100%;
+  float: left;
+  cursor: initial;
+}
+  /* 圆点 */
+  .slick-dots{
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    margin-left: -110px;
+  }
+  .slick-dots li
+  {
+      position: relative;
+      display: inline-block;
+      width:12px;
+      height: 12px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+      background-color:#fff;
+      border-radius: 50%;
+  }
+  .slick-dots li.slick-active{
+    background: #ff6600;
+  }
+  .slick-dots li button
+  {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border:0;
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      padding: 5px;
+      cursor: pointer;
+      color:transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+  }
+  /* 轮播右侧 */
+  #member-banner .banner-right{
+    padding: 8px 0 16px;
+    width: 230px;
+    height: 450px;
+    background-color: #ffffff;
+    z-index: 1;
+    top:13px;
+    right:76px;
+  }
+  #member-banner .login-in{
+    padding:22px 0 22px 13px;
+  }
+  #member-banner .login-in img{
+    width: 38px;
+    height: 38px;
+    margin: 0 3px;
+  }
+  #member-banner .login-in p{
+    font-size: 12px;
+    color:#808080
+  }
+  #member-banner .login-in p a{
+    font-size: 16px;
+    color:#4d4d4d;
+  }
+  #member-banner .banner-right .privi-content p{
+    text-indent: 19px;
+    line-height: 54px;
+  }
+#member-banner .banner-right .privi-content i{
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+}
+#member-banner .privi-content .bean{
+  background: url(../img/member-center-icon_03.jpg) 0px 0px;
+}
+#member-banner .privi-content .act-card{
+  background: url(../img/member-center-icon_03.jpg) 0px 89px;
+}
+#member-banner  .privi-content p.privi-tit{
+  background: url(../img/member-center-topbg.jpg) left no-repeat;
+}
+#member-banner  .privi-content p.privi-login-content{
+  text-align:center;
+  text-indent: 0;
+}
+#member-banner  .privi-content p a{
+  color:#333;
+}
+#member-banner .banner-ad{
+  background-color: #f5f5f5;
+}
+#member-banner .banner-ad li{
+  padding:36px 15px;
+  float:left;
+  width: 256px;
+  height:68px;
+  margin: 24px 6px;
+}
+#member-banner .banner-ad li:first-child{
+  background: url(../img/banner-ad1.jpg)
+}
+#member-banner .banner-ad li:nth-child(2){
+  background: url(../img/banner-ad2.jpg)
+}
+#member-banner .banner-ad li:nth-child(3){
+  background: url(../img/banner-ad3.jpg)
+}
+#member-banner .banner-ad li:last-child{
+  background: url(../img/banner-ad4.jpg)
+}
+#member-banner .banner-ad p{
+  margin: auto 0;
+  line-height: 32px;
+  font-size:22px;
+}
+#member-banner .banner-ad p span{
+  font-size:14px;
+}
+/* 一楼 */
+#one-floor{
+  margin: 23px auto 20px;
+}
+.modp {
+  padding: 12px 15px;
+}
+.list li{
+  float: left;
+  width: 206px;
+  height: 286px;
+  font-size: 14px;
+  text-align: center;
+  margin: 13px 30px 13px 0;
+  color:#f4290d;
+  border:2px solid #e6e6e6;
+  background: url(../img/member-product-img_03.png) center bottom no-repeat;
+}
+.list li .store-name{
+  margin-top: 25px;
+  line-height: 32px;
+}
+.list li .store-name a{
+      color:#333;
+}
+.list li span{
+  margin-right: 20px;
+  font-size: 20px;
+}
+.list li div{
+  width: 138px;
+  height: 26px;
+  line-height: 26px;
+  margin: 0 auto;
+	background-color: #ff6600;
+	box-shadow: 0px 2px 0px 0px 
+		#e53303;
+}
+.list li div a{
+   color:#fff;
+}
+.list li div:hover{
+  background: #691802;
+  text-decoration: none;
+  box-shadow: inset 0px -2px 11px #691802;
+  color:white;
+  -webkit-transition: 0.6s all;
+}
+/* 二楼 */
+#second-floor{
+  margin: 42px auto 14px;
+}
+#second-floor .list li{
+  position: relative;
+  background: url(../img/member-product-bg2_14.png) center bottom no-repeat;
+}
+#second-floor .list li .to-shopcar{
+  position: absolute;
+  top:0;
+  display: none;
+}
+#second-floor .list li:hover .to-shopcar{
+  display: inline;
+}
+#third-floor .adlist{
+  margin: 40px 10px;
+}
+#third-floor .adlist li{
+  float: left;
+  width: 362px;
+}
+#third-floor .adlist li p{
+  margin: 26px 0;
+  line-height: 34px;
+  font-size: 24px;
+  color:#262626;
+}
+#third-floor .adlist li p span{
+  font-size: 16px;
+  color:#737373;
+}
+#third-floor .adlist li:nth-child(2){
+  margin: 0 40px;
+}
+a:hover{text-decoration: none;}

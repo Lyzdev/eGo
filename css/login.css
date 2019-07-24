@@ -1,0 +1,161 @@
+/* 页头 */
+#login{
+    height: 21px;
+    line-height: 21px;
+    background-color: #000;
+    color:#bfbfbf;
+}
+#login a{
+    color:#ff6600;
+}
+#login span:first-child{
+    font-size: 18px;
+    color:#e6e6e6;
+    margin-left: 266px;
+}
+#logoRegister{
+    line-height: 84px;
+    text-indent: 24px;
+    color:#666
+}
+#logoRegister h3{
+    float: left;
+    margin: -21px 0 03px;
+    width: 258px;
+    height: 105px;
+    line-height: 105px;
+    font-weight: normal;
+    text-indent: 156px;
+    color: #fff;
+    background: url(../img/otherLogo.gif) no-repeat;
+}
+#login-box{
+    height: 475px;
+    background: #e93854
+}
+#login-box .loginbg{
+    height: 475px;
+    margin: 0 auto;
+    background: url(../img/loginbg.png) no-repeat center;
+}
+#login-box .dialog-box{
+        width: 350px;
+        height: 370px;
+        margin: 65px 750px;
+        background-color: #ffffff;
+}
+#login-box .login-tab{
+    padding: 20px 9px 14px;
+    border-bottom: 1px solid #f6f6f6;
+}
+#login-box .login-tab li{
+    float: left;
+    line-height: 24px;
+    padding:0 38px;
+}
+#login-box .login-tab li a{
+    color:#959595;
+}
+#login-box .login-tab li:first-child{
+    border-right: 1px solid #f6f6f6;
+}
+#login-box .login-tab li.currentTab a{
+    color:#ff6600;
+}
+#login-box .qcode-content li{
+    height: 314px;
+    width: 350px;
+}
+#login-box .picbox{
+    height: 224px;
+    line-height: 224px;
+}
+#login-box .login-qcode{
+    vertical-align: bottom;
+    position: relative;
+    left:101px;
+    z-index: 1;
+    cursor: pointer;
+}
+#login-box .phone{
+    vertical-align: bottom;
+    position: relative;
+    left:50px;
+}
+#login-box .qcode-content p{
+    font-size: 14px;
+    line-height: 72px;
+    text-align: center;
+}
+#login-box .form-content ul{
+    border-bottom: 2px solid #e6e6e6;
+}
+#login-box .form-content li{
+    position: relative;
+    width: 288px;
+    height: 38px;
+    line-height: 38px;
+    margin: 34px 30px;
+    border:1px solid #bfbfbf;
+}
+#login-box .form-content li img{
+   float: left;
+}
+#login-box .form-content input{
+    text-indent: 10px;
+    border:0;
+    height: 38px;
+}
+#login-box .form-content .userName,#login-box .form-content .pwd{
+  width: 250px;
+}
+#login-box .form-content .fals{
+    position: absolute;
+    right:10px;
+    top:10px;
+    display: none;
+}
+#login-box .form-content .radio-box{
+    width: 10px;
+    height: 10px;
+    border :1px solid #bebebe;
+    display: inline-block;
+    margin: -1px 0;
+}
+#login-box .form-content input[type='radio']{
+    display: none;
+}
+#login-box .form-content .radioli{
+    border:0;
+    margin: 0 auto;
+}
+#login-box .form-content .login-li-box{
+    margin: 0 auto;
+}
+#login-box .form-content .login-btn{
+    width:100%;
+    font-size:24px;
+    color:#fff;
+   background-color: #ff6600;
+   letter-spacing: 28px;
+   text-align: center;
+   cursor: pointer;
+}
+#login-box .register-btn{
+    font-size: 20px;
+    height:22px;
+    text-align: center;
+    padding:12px 0 16px;
+}
+#login-box .register-btn i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background:url(../img/pwd-icons-new_08.png) center;
+}
+#login-box .register-btn a{
+    color:#ff6600;
+}
+a:hover{
+    text-decoration: none;
+}

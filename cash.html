@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐购商城-结算中心</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/remodal-default-theme.css">
+    <link rel="stylesheet" href="./css/remodal.css">
+    <link rel="stylesheet" href="./css/header2.css">
+    <link rel="stylesheet" href="./css/cash.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/jquery-3.1.0.js"></script>
+    <script src="./js/carousel.min.js"></script>
+    <script src="./js/remodal.js"></script>
+    <script src="./js/cash.js"></script>
+</head>
+<body>
+    <!-- 页头 -->
+    <!-- 登录 -->
+    <div id="login" class="widthAll">
+        <div class="wrapper ">
+            <span>legochina.cn</span>
+            <span class='fr mr10'>欢迎光临<a href='./index.html' class='fyellow'>乐购</a>，请 &nbsp;<a
+                    href="./login.html">登录</a>\<span><a href="./register.html">注册</a></span></span>
+        </div>
+    </div>
+    <!-- logo与收银台 -->
+    <div id="logoRegister">
+        <div class='wrapper positionRel font30 clearfix'>
+            <h3>收银台</h3>
+        </div>
+    </div>
+    </div>
+    <!-- 订单 -->
+    <div id="order" class='wrapper'>
+        <p class='tips'>&nbsp;订单提交成功，请尽快付款！ 订单编号：91000234567<a>订单详情</a></p>
+        <div class="tips-content font18">
+            <p>&nbsp;请您在订单提交&emsp;<span class='fyellow countDown fbold'>24</span>&emsp;内付款，否则将会取消订单<span class='fr cost'>应付金额：<span
+                        class='price fyellow font32'>0.00</span>&nbsp;元</span></p>
+        </div>
+        <div class="lego-pay font20 clearfix">
+            <div class='pay-title'>
+                <p class='fwhite bgyellow fl '>乐购支付</p>&nbsp;
+                <span class='pay-tips font18'>以下方式由乐购支付提供</span>
+            </div>
+            <div class="pay-choice font18 clearfix">
+                <div class='card'>银行卡</div>
+                <div class='card'>中国招商银行&emsp;&emsp;&emsp;<span class='fyellow'>网银</span>&emsp;&emsp;<span class='flgray'>最近使用</span>
+                </div>
+                <div class='add-card'>添加银行卡 +</div>
+                <span class='fr cost'>支付金额：<span class='price fyellow font32'>0.00</span>&nbsp;元</span></p>
+            </div>
+            <a href="#modal"><button class="pay-btn">
+                立即支付
+            </button></a>
+        </div>
+        <div class="other-pay font20 clearfix">
+            <div class='pay-title'>
+                <p class='fwhite bgyellow fl '>其他支付</p>&nbsp;
+                <span class='pay-tips font18'>以下方式不支持合并支付</span>
+            </div>
+            <div class="pay-choice font18 clearfix">
+                    <a href="#">微信支付</a>&nbsp;|&nbsp;
+                    <a href="#">中国移动支付</a>&nbsp;|&nbsp;
+                    <a href="#">中国银联</a>&nbsp;|&nbsp;
+                    <a href="#">外籍内卡</a>&nbsp;|&nbsp;
+                    <a href="#">拉卡拉</a>&nbsp;|&nbsp;
+                    <a href="#">预约支付卡</a>&nbsp;|&nbsp;
+                    <a href="#">乐购钱包扫一扫</a>
+            </div>
+        </div>
+    </div>
+    <!-- 广告 -->
+    <div class="wrapper mt28">
+        <!-- 广告 -->
+        <a href="#"><img src="./img/menuad_12.jpg" alt="" class='img-ad'></a>
+    </div>
+    <!-- 页脚 -->
+    <div id="footer" class='font14'>
+        <div class="feature bglgray">
+            <div class="wrap mauto">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+        <div class="footer-menu mauto clearfix">
+            <ul>
+                <li>
+                    <dl>
+                        <dt><a href="#">购物指南</a></dt>
+                        <dd><a href="#">购物流程</a></dd>
+                        <dd><a href="#">发票制度</a></dd>
+                        <dd><a href="#">账户管理</a></dd>
+                        <dd><a href="#">会员优惠</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">支付方式</a></dt>
+                        <dd><a href="#">货到付款</a></dd>
+                        <dd><a href="#">网上支付</a></dd>
+                        <dd><a href="#">礼品卡支付</a></dd>
+                        <dd><a href="#">银行转帐</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">订单服务</a></dt>
+                        <dd><a href="#">订单配送查询</a></dd>
+                        <dd><a href="#">订单状态说明</a></dd>
+                        <dd><a href="#">自助取消订单</a></dd>
+                        <dd><a href="#">自助修改订单</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">退换货</a></dt>
+                        <dd><a href="#">退换货政策</a></dd>
+                        <dd><a href="#">自助申请退换货</a></dd>
+                        <dd><a href="#">退换货进度查询</a></dd>
+                        <dd><a href="#">退款方式和时间</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <i class='foot-logo'></i>
+        </div>
+        <div class="linkCopy mauto tcenter">
+            <a href="">公司简介</a>&emsp;|&emsp;
+            <a href="">Investor Relations</a>&emsp;|&emsp;
+            <a href="">网站联盟</a>&emsp;|&emsp;
+            <a href="">乐购招商</a>&emsp;|&emsp;
+            <a href="">机构销售</a>&emsp;|&emsp;
+            <a href="">手机乐购</a>&emsp;|&emsp;
+            <a href="">官方Blog</a>&emsp;|&emsp;
+            <a href="">热词搜索</a>
+            <p>Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+        </div>
+    </div>
+    <script>
+        $(document).on('opening', '.remodal', function () {
+            console.log('opening');
+        });
+        $(document).on('opened', '.remodal', function () {
+            console.log('opened');
+        });
+        $(document).on('closing', '.remodal', function (e) {
+            console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+        });
+        $(document).on('closed', '.remodal', function (e) {
+            console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+        });
+        $(document).on('confirmation', '.remodal', function () {
+            console.log('confirmation');
+            // $(location).attr('href','./crash.html')
+            var price=localStorage.getItem('price');
+            console.log(price)
+        });
+        $(document).on('cancellation', '.remodal', function () {
+            console.log('cancellation');
+        });
+        //  Usage:
+        //  $(function() {
+        //
+        //    // In this case the initialization function returns the already created instance
+        //    var inst = $('[data-remodal-id=modal]').remodal();
+        //
+        //    inst.open();
+        //    inst.close();
+        //    inst.getState();
+        //    inst.destroy();
+        //  });
+        //  The second way to initialize:
+        $('[data-remodal-id=modal2]').remodal({
+            modifier: 'with-red-theme'
+        });
+    </script>
+    <div class="remodal-overlay remodal-is-closed" style="display: none;"></div>
+    <div class="remodal-wrapper with-red-theme remodal-is-closed" style="display: none;">
+        <div data-remodal-id="modal2" role="dialog" aria-labelledby="modal2Title" aria-describedby="modal2Desc"
+            class="remodal remodal-is-initialized with-red-theme remodal-is-closed" tabindex="-1">
+            <div>
+                <h2 id="modal2Title">Another one window</h2>
+                <p id="modal2Desc">
+                    Hello!
+                </p>
+            </div>
+            <br>
+            <button data-remodal-action="confirm" class="remodal-confirm">Hello!</button>
+        </div>
+    </div>
+    <div class="remodal-wrapper remodal-is-closed" style="display: none;">
+        <div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="modal" role="dialog"
+            aria-labelledby="modal1Title" aria-describedby="modal1Desc" tabindex="-1">
+            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+            <div>
+                <h2 id="modal1Title" class='modal1Title'>老板，财源广进呀</h2>
+                <p id="modal1Desc">
+                    <pre>
+    _ooOoo_  
+    o8888888o  
+    88" . "88  
+    (| -_- |)  
+    O\ = /O  
+    ____/`---'\____  
+  .   ' \\| |// `.  
+   / \\||| : |||// \  
+ / _||||| -:- |||||- \  
+   | | \\\ - /// | |  
+ | \_| ''\---/'' | |  
+  \ .-\__ `-` ___/-. /  
+   ___`. .' /--.--\ `. . __  
+    ."" '< `.___\_<|>_/___.' >'"".  
+   | | : `- \`.;`\ _ /`;.`/ - ` : | |  
+ \ \ `-. \_ __\ /__ _/ .-` / /  
+ ======`-.____`-.___\_____/___.-`____.-'======  
+    `=---='  
+  -————————————————————————————————————————-
+   佛祖保佑，顺分顺水，财源广进 ! 
+  -————————————————————————————————————————-
+                </pre>
+                </p>
+            </div>
+            <br>
+            <button data-remodal-action="cancel" class="remodal-cancel">再逛逛</button>
+            <button data-remodal-action="confirm" class="remodal-confirm">穷人剁手</button>
+        </div>
+    </div>
+</body>
+</html>

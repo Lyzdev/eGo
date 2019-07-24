@@ -1,0 +1,81 @@
+/* 页头 */
+#login{
+    height: 28px;
+    line-height: 28px;
+    background-color: #000;
+    color:#bfbfbf;
+}
+#login a{
+    color:#ff6600;
+}
+#login span:first-child{
+    font-size: 18px;
+    color:#e6e6e6;
+    margin-left: 200px;
+}
+#login a{
+    cursor: pointer;
+}
+/* 搜索框 */
+#search{
+    padding:4px 0 20px; 
+}
+#search .inbox{
+    width: 676px;
+}
+#search .inbox input{
+    float:left;
+}
+#search .search-content{
+    width: 386px;
+    height: 32px;
+}
+#search .search-btn{
+    width: 44px;
+    height:36px;
+    background: #ff6600 url(../img/bgicon.png) no-repeat -5px -2px;
+}
+#search .shopping-box input{
+    width: 100px;
+    height: 36px;
+    cursor: pointer;
+}
+#search .shopping-box .shop-car{
+    color: #808080;
+    text-indent:30px;
+    background:url(../img/bgicon.png) no-repeat 0px -44px;
+}
+#search .shopping-box .order,#search .shopping-box .shop-car{
+    background-color: #ebebeb;
+}
+#search .shopping-box .shop-car:hover{
+    color:#fff;
+    background:#ff6600 url(../img/bgicon.png) no-repeat 0px -44px;
+}
+#search .shopping-box .order:hover{
+    color:#fff;
+    background:#ff6600;
+}
+/* logo与导航 */
+#logoNav{
+    height: 24px;
+    line-height: 24px;
+}
+#logoNav .logo{
+    top:-88px;
+    left:0;    
+}
+#logoNav .nav{
+    padding-right: 98px;
+}
+#logoNav .nav li{
+    float:left;
+    font-weight: bold;
+    padding:0 15px;
+}
+#logoNav .nav li:hover a{
+    color:#ff6600;
+}
+#logoNav .nav a{
+    color:#323232;
+}

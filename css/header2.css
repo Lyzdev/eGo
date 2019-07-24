@@ -1,0 +1,43 @@
+/* 页头 */
+#login{
+    height: 21px;
+    line-height: 21px;
+    background-color: #000;
+    color:#bfbfbf;
+}
+#login a{
+    color:#ff6600;
+    cursor: pointer;
+}
+#login span:first-child{
+    font-size: 18px;
+    color:#e6e6e6;
+    margin-left: 266px;
+}
+#logoRegister{
+    /* line-height: 84px; */
+    text-indent: 24px;
+    color:#666;
+    box-shadow: 0 5px  5px #d8d6d6;
+}
+#logoRegister h3{
+    float: left;
+    margin: -21px 0 03px;
+    width: 258px;
+    height: 105px;
+    line-height: 105px;
+    font-weight: normal;
+    text-indent: 128px;
+    color: #fff;
+    background: url(../img/otherLogo.gif) no-repeat;
+}
+#logoRegister span{
+    float: right;
+    margin-right: 38px;
+    line-height: 116px;
+    font-size: 24px;
+    color:#a6a6a6;
+}
+#logoRegister span a{
+    color:#666;
+}

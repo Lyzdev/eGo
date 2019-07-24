@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐购商城-注册</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/remodal-default-theme.css">
+    <link rel="stylesheet" href="./css/remodal.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/jquery-3.1.0.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/remodal.js"></script>
+    <script src="./js/register.js"></script>
+</head>
+<body>
+    <!-- 页头 -->
+    <!-- 登录 -->
+    <div id="login" class="widthAll">
+        <div class="wrapper ">
+            <span>legochina.cn</span>
+            <span class='fr mr10'>欢迎光临<a href='./index.html' class='fyellow'>乐购</a>，请 &nbsp;<a href="./login.html">登录</a>\<span><a
+                        href="./register.html">注册</a></span></span>
+        </div>
+    </div>
+    <!-- logo与注册 -->
+    <div id="logoRegister">
+     <div class='wrapper positionRel font30'>
+        <h3>注册</h3>
+        欢迎登陆
+        <span>已有账号，请 <a href="./login.html">登陆</a></span>
+    </div>
+</div>
+    <!-- 注册表单 -->
+    <div id="regForm" class='wrapper clearfix'>
+        <form action="#" method="GET" id='reg'>
+            <ul>
+                <li>用户名&emsp;&emsp;<input type="text" placeholder="您的账户名和登录名" class='fal-inpt' id='user' name='user'>
+                    <img src="./img/false.jpg" alt="" class='fals'>
+                </li>
+                <li>设置密码&emsp;<input type="password" placeholder="建议设置两种字符密码" class='fal-inpt' id='pwd' name='pwd'>
+                    <img src="./img/false.jpg" alt="" class='fals'>
+                </li>
+                <li>确认密码&emsp;<input type="password" placeholder="请再次输入密码" class='fal-inpt' id='qpwd' name='qpwd'>
+                    <img src="./img/false.jpg" alt="" class='fals'>
+                </li>
+                <li>中国+86&emsp;<input type="text" placeholder="建议使用常用手机号" class='fal-inpt' id='phoneNum' name='phoneNum'>
+                    <img src="./img/false.jpg" alt="" class='fals'>
+                </li>
+                <li>验证码
+                    <div class='fr verify-box'>
+                        <input type="text" placeholder="请输入验证码" class='verify'>
+                        <span class='fwhite font16 checkCode'>获取验证码</span>
+                    </div>
+                </li>
+                <li class='phone-check'>手机验证码
+                    <div class='fr verify-box'>
+                        <input type="text" placeholder="请输入手机验证码" class='verify'>
+                        <a href="#modal">
+                            <button type='button' class='font16 getc-btn'>获取验证码</button>
+                        </a>
+                    </div>
+                </li>
+                <li class='proto'>
+                    <div class="radio-box"></div>
+                    <label><input type="radio" name='proto-check' class='proto-check'><span>我已阅读并同意</span><a
+                            href="#">《乐购用户注册协议》</a></label>
+                </li>
+                <li class='submit-li'>
+                    <input type="submit" value="立即注册">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <!-- 页脚 -->
+    <div class="linkCopy mauto tcenter">
+        <a href="">公司简介</a>&emsp;|&emsp;
+        <a href="">Investor Relations</a>&emsp;|&emsp;
+        <a href="">网站联盟</a>&emsp;|&emsp;
+        <a href="">乐购招商</a>&emsp;|&emsp;
+        <a href="">机构销售</a>&emsp;|&emsp;
+        <a href="">手机乐购</a>&emsp;|&emsp;
+        <a href="">官方Blog</a>&emsp;|&emsp;
+        <a href="">热词搜索</a>
+        <p>Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+    </div>
+</body>
+<script>
+     $(function () {
+//初始化插件
+$("#reg").validate({
+    //规则
+    rules: {
+        //用户名
+        user: {
+            required: true,
+            isUser: true
+        },
+        //密码
+        pwd: {
+            required: true,
+            isPwd: true
+        },
+        //校验密码
+        qpwd: {
+            equalTo:"#pwd"
+        },
+        // 校验电话号码
+        phoneNum:{
+            required:true,
+            isPhoneNumber:true
+        }
+    },
+    //规则的错误提示信息
+    messages: {
+        //用户名
+        user: {
+            required: "请必须输入用户名!!!",
+        },
+        //密码
+        pwd: {
+            required: "请输入密码",
+        },
+        //校验密码
+        qpwd: {
+            equalTo: "两次密码不一致"
+        },
+        // 校验电话号码
+        phoneNum:{
+            required:'输入正确的号码'
+        }
+    }
+})
+/* 
+    自定义验证规则:改三处
+        方法名: isZipCode === isUser
+        验证规则: /^[0-9]{6}$/ === /^[a-zA-Z0-9_-]{4,16}$/;
+        提示信息: 请正确填写您的邮政编码 === 请输入正确用户名
+    jQuery.validator.addMethod("isZipCode", function (value, element) {
+        var tel = /^[0-9]{6}$/;
+        return this.optional(element) || (tel.test(value));
+    }, "请正确填写您的邮政编码");
+*/
+//用户名自定义验证   
+jQuery.validator.addMethod("isUser", function (value, element) {
+    var tel = /^[a-zA-Z0-9_-]{4,16}$/;;
+    return this.optional(element) || (tel.test(value));
+}, "请输入正确用户名");
+//密码自定义验证   
+jQuery.validator.addMethod("isPwd", function (value, element) {
+    var tel =  /^[A-z][A-z0-9_-]{5,11}$/;
+    return this.optional(element) || (tel.test(value));
+}, "输入正确密码!");
+// 电话自定义验证
+jQuery.validator.addMethod("isPhoneNumber", function (value, element) {
+    var tel = /^1[3456789]\d{9}$/;
+    return this.optional(element) || (tel.test(value));
+}, "请输入正确电话号码");
+})
+// 弹出对话框部分
+            $(document).on('opening', '.remodal', function () {
+              console.log('opening');
+            });
+            $(document).on('opened', '.remodal', function () {
+              console.log('opened');
+            });
+            $(document).on('closing', '.remodal', function (e) {
+              console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+            });
+            $(document).on('closed', '.remodal', function (e) {
+              console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+            });
+            $(document).on('confirmation', '.remodal', function () {
+              console.log('confirmation');
+            });
+            $(document).on('cancellation', '.remodal', function () {
+              console.log('cancellation');
+            });
+          //  Usage:
+          //  $(function() {
+          //
+          //    // In this case the initialization function returns the already created instance
+          //    var inst = $('[data-remodal-id=modal]').remodal();
+          //
+          //    inst.open();
+          //    inst.close();
+          //    inst.getState();
+          //    inst.destroy();
+          //  });
+            //  The second way to initialize:
+            $('[data-remodal-id=modal2]').remodal({
+              modifier: 'with-red-theme'
+    });
+</script>
+		  <div class="remodal-overlay remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper with-red-theme remodal-is-closed" style="display: none;"><div data-remodal-id="modal2" role="dialog" aria-labelledby="modal2Title" aria-describedby="modal2Desc" class="remodal remodal-is-initialized with-red-theme remodal-is-closed" tabindex="-1">
+          <div>
+          <h2 id="modal2Title">Another one window</h2>
+          <p id="modal2Desc">
+          Hello!
+          </p>
+          </div>
+          <br>
+          <button data-remodal-action="confirm" class="remodal-confirm">Hello!</button>
+          </div></div>
+          <div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc" tabindex="-1">
+          <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+          <div>
+          <h2 id="modal1Title" class='modal1Title font20'>年轻人，急啥呢！！！</h2>
+          <p id="modal1Desc">
+                <pre>
+*----------Dragon be here!----------/
+* 　　　┏┓　　　┏┓
+* 　　┏┛┻━━━┛┻┓
+* 　　┃　　　　　　　┃
+* 　　┃　　　━　　　┃
+* 　　┃　┳┛　┗┳　┃
+* 　　┃　　　　　　　┃
+* 　　┃　　　┻　　　┃
+* 　　┃　　　　　　　┃
+* 　　┗━┓　　　┏━┛
+* 　　　　  ┃　　　┃验证码
+* 　　　　     ┃　　　┃传送中.....！
+* 　　　　┃　　　┗━━━┓
+* 　　　　┃　　　　　　　┣┓
+* 　　　　┃　　　　　　　┏┛
+* 　　　　┗┓┓┏━┳┓┏┛
+* 　　　　　┃┫┫　┃┫┫
+* 　　　　　┗┻┛　┗┻┛
+* ━━━━━━神兽出没━━━━━━
+                </pre>
+          </p>
+          </div>
+          <br>
+          <button data-remodal-action="cancel" class="remodal-cancel">确定？</button>
+          <button data-remodal-action="confirm" class="remodal-confirm">真确定！</button>
+          </div></div>
+</html>
